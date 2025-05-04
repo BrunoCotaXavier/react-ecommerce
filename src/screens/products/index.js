@@ -1,3 +1,5 @@
+import "./style.products.css"
+
 const Product = () => {
     return (
         <h1>Product</h1>
