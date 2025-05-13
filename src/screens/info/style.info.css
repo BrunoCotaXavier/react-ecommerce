@@ -9,7 +9,7 @@
   padding: 30px;
 }
 
-h1 {
+.info-header h1 {
   color: #0a3f23;
   font-size: 44px;
   font-weight: 600;
@@ -44,6 +44,7 @@ h1 {
   width: 211px;
   height: 40px;
   color: white;
+  font-size: 19px;
   border: none;
   cursor: pointer;
 }
@@ -59,32 +60,138 @@ span {
   position: absolute;
   top: 80px;
   margin-top: 50px;
-  left: 0;
+  left: -10px;
   background-color: rgb(171, 111, 0);
-  width: 100%;
+  width: 101%;
+  max-width: 1200px;
   height: 5px;
   z-index: 1000;
   grid-column: 1 / -1;
 }
 
-.steps:nth-child(4n)::after {
+/*.steps:nth-child(5n):not(:last-child)::after {
   content: '>';
   position: absolute;
-  right: -250px;
-  top: 113px; /* alinhado com a barra */
-  font-size: 32px;
+  right: -25px;
+  top: 107px;
+  font-size: 45px;
   color: rgb(171, 111, 0);
   z-index: 1000;
 }
+
+.steps:nth-child(5n+1):not(:first-child)::before {
+  content: '>';
+  position: absolute;
+  left: -25px;
+  top: 107px;
+  font-size: 45px;
+  color: rgb(171, 111, 0);
+  z-index: 1000;
+}*/
 
 .steps-bar2 {
   position: absolute;
   top: 640px;
   margin-top: 50px;
-  left: 0;
+  left: -10px;
   background-color: rgb(171, 111, 0);
-  width: 100%;
+  width: 101%;
+  max-width: 1200px;
   height: 5px;
   z-index: 1000;
   grid-column: 1 / -1;
+}
+
+.seta-direita {
+  position: absolute;
+  top: 690px;
+  left: -24px;
+  width: auto;
+  height: 5px;
+  color: rgb(171, 111, 0);
+  transform: rotate(90deg);
+  z-index: 1000;
+}
+
+.seta-direita2 {
+  position: absolute;
+  top: 115px;
+  right: -15px;
+  transform: rotate(90deg);
+}
+
+.pointer {
+  position: absolute;
+  right: -25px;
+  top: 678px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 50px;
+  width: 100%;
+  height: 336px;
+  background-color: #137D46;
+}
+
+.contact-bar {
+  display: flex;
+  justify-content: left;
+  width: 68%;
+}
+
+.contact {
+  display: flex;
+  width: 250px;
+  flex-direction: column;
+  justify-content: left;
+  margin-right: 100px;
+  margin-left: 50px;
+}
+
+.contact svg {
+  width: 30px;
+  height: 30px;
+}
+
+.contact h1 {
+  color: white;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.contact a {
+  color: white;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.budget {
+  width: 250px;
+  margin: 0 auto;
+}
+
+.budget h1 {
+  color: white;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.budget button {
+  background-color: #0A3F23;
+  width: 297px;
+  height: 36px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.budget button:hover {
+  background-color: white;
+  color: #0A3F23;
+  transition: 500ms;
 }
