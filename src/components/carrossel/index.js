@@ -1,31 +1,34 @@
-import React, { useRef } from "react";
-import "./carrosselFullWidth.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const CarrosselFullWidth = ({ items }) => {
-  const scrollRef = useRef(null);
-
-  const scroll = (direction) => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollBy({
-        left: direction === "left" ? -300 : 300,
-        behavior: "smooth",
-      });
-    }
-  };
-
+const FullWidthCarousel = () => {
   return (
-    <div className="carrossel-container">
-      <button className="carrossel-btn left" onClick={() => scroll("left")}>‹</button>
-      <div className="carrossel-scroll" ref={scrollRef}>
-        {items.map((item, index) => (
-          <div className="carrossel-item" key={index}>
-            {item}
-          </div>
-        ))}
+    <div style={{height: 500}} id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
+      <div className="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-      <button className="carrossel-btn right" onClick={() => scroll("right")}>›</button>
+      <div className="carousel-inner">
+        <div className="carousel-item active">
+          <img src="https://via.placeholder.com/1920x600" className="d-block w-100" alt="Slide 1" />
+        </div>
+        <div className="carousel-item">
+          <img src="https://via.placeholder.com/1920x600/007bff/ffffff" className="d-block w-100" alt="Slide 2" />
+        </div>
+        <div className="carousel-item">
+          <img src="https://via.placeholder.com/1920x600/28a745/ffffff" className="d-block w-100" alt="Slide 3" />
+        </div>
+      </div>
+      <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Anterior</span>
+      </button>
+      <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Próximo</span>
+      </button>
     </div>
   );
 };
 
-export default CarrosselFullWidth;
+export default FullWidthCarousel;
