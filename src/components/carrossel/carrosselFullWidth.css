@@ -1,0 +1,49 @@
+.carrossel-container {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  .carrossel-scroll {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .carrossel-scroll::-webkit-scrollbar {
+    display: none; /* Chrome */
+  }
+  
+  .carrossel-item {
+    min-width: 500px;
+    flex-shrink: 0;
+    margin: 10px;
+    background: #eee;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .carrossel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .carrossel-btn.left {
+    left: 10px;
+  }
+  
+  .carrossel-btn.right {
+    right: 10px;
+  }
+  

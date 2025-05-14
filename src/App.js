@@ -4,10 +4,13 @@ import Product from "./screens/products";
 import Budget from "./screens/budget";
 import Ecommerce from "./screens/ecommerce";
 import Info from "./screens/info";
+import Header from "./components/header";
+import Bottom from "./components/bottom";
 
 function App() {
   return (
     <BrowserRouter>
+    <Header/>
       <Routes>
         <Route>
           <Route path="/" index element={<Home />} />
@@ -17,6 +20,7 @@ function App() {
           <Route path="/loja-online" element={<Ecommerce />} />
         </Route>
       </Routes>
+      <Bottom/>
     </BrowserRouter>
   );
 }
