@@ -46,3 +46,7 @@
   height: 71px;
   padding: 0 40px;
 }
+
+.tab-about a {
+  padding: 10px;
+}	
