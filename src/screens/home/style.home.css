@@ -79,7 +79,7 @@
     background-color: white;
     color: #1E5E3F;
     border: 2px solid #1E5E3F;
-    
+
     text-transform: uppercase;
     font-family: 'Arial', sans-serif;
     font-weight: 500;
@@ -116,15 +116,193 @@
     font-weight: bold;
     font-size: 14px;
 
-    background-color: #00471b; 
+    background-color: #00471b;
     color: white;
 
     padding: 12px 24px;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .botao-orcamento:hover {
-    background-color: #006b2c; 
-  }
+}
+
+.botao-orcamento:hover {
+    background-color: #006b2c;
+}
+
+.containerAboutHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    margin-top: 100px;
+}
+
+.titleAboutHome {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 40px;
+    min-width: 400px;
+}
+
+.descriptionAboutHome {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    min-width: 400px;
+}
+
+.cardAboutHome {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #00471b;
+
+    height: 451px;
+    width: 100%;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.containerTitleAboutHome {
+    width: 400px;
+    text-align: start;
+}
+
+.containerDescriptionAboutHome {
+    width: 400px;
+    text-align: start;
+}
+
+.cardAboutHomeImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.responsiveImage {
+    max-width: 100%;
+    height: 451px;
+    object-fit: cover;
+}
+
+.containerContactHome {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    /*   padding-left: 250px;
+    padding-right: 250px; */
+}
+
+.titleContactHome {
+    font-size: 50px;
+    font-weight: "bold";
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cardContactHome {
+    width: 400px;
+    margin-top: 60px;
+}
+
+.containerPhone {
+    display: flex;
+}
+
+.phoneCall {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.sectionPhone {
+    padding-top: 20px;
+}
+
+.buttonBudget {
+    background-color: white;
+    color: #00330f;
+    padding: 4px 20px;
+    border: 1px solid #00330f;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.firstSectionFrom {
+    width: 100%;
+    display: flex;
+}
+
+.buttonSubmit {
+    background-color: #00330f;
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease;
+}
+
+.buttonSubmit:hover {
+    background-color: #b8c500;
+}
+
+.inputForm {
+    background-color: white;
+    border: 0.5px solid #00330f;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    width: 100%;
+    
+    font-weight: bold;
+}
+
+.textAreaForm {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+
+    background-color: white;
+    border: 0.5px solid #00330f;
+    
+    font-weight: bold;
+}
+
+.sectionButtonForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    padding: 10px;
+}
+
+.labelCheckbox {
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.containerLocation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    margin-top: 60px;
+    padding-top: 60px;
+
+    background-color: #5A2918;
+}
