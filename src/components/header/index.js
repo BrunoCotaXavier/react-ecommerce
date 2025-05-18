@@ -18,7 +18,7 @@ const Header = () => {
                 <Link className="headerLink" to="/loja-online">LOJA ONLINE</Link>
             </div>
             <div className="containerPerson">
-                <p style={{ paddingTop: 5, fontWeight: "bold" }}>Fazer Login</p>
+                <p style={{ paddingTop: 15, paddingRight: 5, fontWeight: "bold" }}>Fazer Login</p>
                 <img src={person}></img>
                 <img src={cart}></img>
             </div>
