@@ -1,8 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './carrosselFullWidth.css'; 
+
+import image01 from "../../assets/image01.jpg";
+import image02 from "../../assets/image02.jpg";
+import image03 from "../../assets/image03.jpg";
 
 const FullWidthCarousel = () => {
   return (
-    <div style={{height: 500}} id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleIndicators" className="carousel slide custom-carousel" data-bs-ride="carousel">
       <div className="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -10,13 +15,13 @@ const FullWidthCarousel = () => {
       </div>
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img src="https://via.placeholder.com/1920x600" className="d-block w-100" alt="Slide 1" />
+          <img src={image01} className="d-block w-100" alt="Slide 1" />
         </div>
         <div className="carousel-item">
-          <img src="https://via.placeholder.com/1920x600/007bff/ffffff" className="d-block w-100" alt="Slide 2" />
+          <img src={image02} className="d-block w-100" alt="Slide 2" />
         </div>
         <div className="carousel-item">
-          <img src="https://via.placeholder.com/1920x600/28a745/ffffff" className="d-block w-100" alt="Slide 3" />
+          <img src={image03} className="d-block w-100" alt="Slide 3" />
         </div>
       </div>
       <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
