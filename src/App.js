@@ -10,7 +10,7 @@ import Bottom from "./components/bottom";
 function App() {
   return (
     <BrowserRouter>
-    <Header/>
+      <Header />
       <Routes>
         <Route>
           <Route path="/" index element={<Home />} />
@@ -20,7 +20,7 @@ function App() {
           <Route path="/loja-online" element={<Ecommerce />} />
         </Route>
       </Routes>
-      <Bottom/>
+      <Bottom />
     </BrowserRouter>
   );
 }
